@@ -1,3 +1,5 @@
+/* Написать функцию, которая принимает объект и выводит в консоль все поля этого объекта и значения этих полей*/
+
 function showAddress(address){
     if(typeof(address) !== 'object' || address === '' || address === null){
         return console.log(`You input something what isn't object`);
@@ -13,5 +15,4 @@ let address = {
     zipcode: 230026
 }
 
-//showAddress(address);
-showAddress();
+showAddress(address);

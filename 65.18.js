@@ -1,4 +1,8 @@
-function Blog(title, body, author, views, comments, isAlive){
+/* Написать функцию-конструктор для объекта Post. Функция должна принимать заголовок поста, его содержимое, количество просмотров,
+объект комментарий c полями: автор и текст комментария, булевское значение, говорящее существует пост или нет */
+
+
+function Post (title, body, author, views, comments, isAlive){
     this.title = title;
     this.body = body;
     this.author = author;
@@ -7,6 +11,6 @@ function Blog(title, body, author, views, comments, isAlive){
     this.isAlive = isAlive;
 }
 
-let blog = new Blog('JavaScript', 'About JS', 'Valera', 100500, [{author: 'Dima', body: 'blabla'}], true );
+let post = new Post('JavaScript', 'About JS', 'Valera', 100500, [{author: 'Dima', body: 'blabla'}], true );
 
 console.log(blog);

@@ -1,3 +1,9 @@
+/* Написать функцию, которая принимает числовое значение скорости и возвращает сообщение в зависимости от скорости.
+За превышение скорости на каждые 5 км/ч начисляется 1 балл (если максимально разрешенная скорость 70 км/ч, а переданное значение
+скорости - 80 км/ч, то будет начислено 2 балла) и возвращается сообщение "Points: n", где n - количество полученных баллов.
+При достижении 12 баллов и выше, должно возвращаться сообщение: "License suspended". Если скорость находится в пределах максимальной,
+возвращается сообщение: "OK". Если передано отрицательное значение скорости, возвращается "Speed value can't be negative" */
+
 function checkSpeed(speed){
     if(typeof(speed) !== 'number'){
         return 'Speed must be a number';
@@ -10,7 +16,6 @@ function checkSpeed(speed){
     let pointsForSuspendingLicense = (speedOfSuspendindLicense - speedLimit)/kmPerPoint;
     let maxQuantityOfNegativePoints = (0 - speedLimit)/kmPerPoint;
     let points = Math.floor(overSpeed/kmPerPoint);
-    // let points = (overSpeed/kmPerPoint);
     return points > 0 ? (points < pointsForSuspendingLicense ? (`Points: ${points}`) : ('License suspended')) : (points >= maxQuantityOfNegativePoints  ? ('OK') : (`Speed value can't be negative`));
 }
 

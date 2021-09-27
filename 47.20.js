@@ -1,3 +1,5 @@
+/* Написать функцию, которая принимает положительное числовое значение и выводит все простые числа от 2 и до этого числа включительно*/
+
 function showPrimes(limit){
     if(typeof(limit) !== 'number' || limit === Infinity){
         return console.log ('Please, input a number');

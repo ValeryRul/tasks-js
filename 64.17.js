@@ -1,18 +1,12 @@
+/* Написать 2 функции. 1-ая проверяет эквивалентны ли 2 объекта, ссылки на которые были переданы в фунцию.
+2-ая проверяет являются ли переданные 2 ссылки ссылками на один и тот же объект*/
+
+
 function Address(street, city, zipcode){
     this.street = street;
     this.city = city;
     this.zipcode = zipcode;
 };
-
-let address = {
-    street: 'a',
-    city: 'b',
-    zipcode: 'c',
-};
-let address1 = new Address('a', 'b', 'c');
-
-
-console.log(areEqual(address, address1));
 
 
 function areEqual(address, address1){
@@ -57,3 +51,14 @@ function getArrayOfValues(obj){
     }
     return arrayOfValues;
 }
+
+let address = {
+    street: 'a',
+    city: 'b',
+    zipcode: 'c',
+};
+let address1 = new Address('a', 'b', 'c');
+
+
+console.log(areEqual(address, address1));
+console.log(areSame(address, address1));

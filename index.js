@@ -6,44 +6,11 @@ console.log(fizzBuzz(1));
 
 
 
-/* function Address(street, city, zipcode){
-    this.street = street;
-    this.city = city;
-    this.zipode = zipcode;
-};
-
-let address = new Address('a', 'b', 'c');
-let address1 = new Address('a', 'b', 'c');
-
-function areEqual(address, address1){
-    for(key in address){
-        if(address[key] !== address1[key]){
-            return false;
-        }
-        return true;
-    }
-}
-
-function areSame(address, address1){
-    return address === address1;
-}
-
-console.log(areEqual(address, address1)); */
+/*  */
 
 //Ex65.18
 
-/* function Blog(title, body, author, views, comments, isAlive){
-    this.title = title;
-    this.body = body;
-    this.author = author;
-    this.views = views;
-    this.comments = comments;
-    this.isAlive = isAlive;
-}
-
-let blog = new Blog('JavaScript', 'About JS', 'Valera', 100500, [{author: 'Dima', body: 'blabla'}], true );
-
-console.log(blog); */
+/*  */
 
 
 //Ex 84.17

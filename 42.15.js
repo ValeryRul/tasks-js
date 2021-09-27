@@ -1,3 +1,5 @@
+/* Написать функцию, которая принимает массив и возвращает количество элементов в этом массиве, являющихся "Truthy".*/
+
 function countTruthy(array){
     return array.reduce((numberOfTruthyValues, nextValue) => {
         if (nextValue){

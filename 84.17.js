@@ -1,3 +1,8 @@
+/* Написать функцию, которая принимает 2 числа - min и max, и заполняет массив целыми числами от числа min до числа max*/
+
+
+//1-й Вариант
+
 function arrayFromRange(min, max){
     let length = max - min + 1;
     let arrayWithNumbers = [];
@@ -7,7 +12,8 @@ function arrayFromRange(min, max){
     return arrayWithNumbers;
 }
 
-console.log(arrayFromRange(-10, -5));
+
+//2-й Вариант
 
 function arrayFromRange1(min, max){
     let arrayWithNumbers = [];
@@ -16,3 +22,8 @@ function arrayFromRange1(min, max){
     }
     return arrayWithNumbers;
 }
+
+
+console.log(arrayFromRange(-5, -10));
+
+console.log(arrayFromRange1(-5, -10));

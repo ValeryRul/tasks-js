@@ -1,3 +1,6 @@
+/* Написать 2 функции, которые создают новый объект. 1 функция - фабричный метод. 2 функция - конструктор*/
+
+
 function createAddress(street, city, zipcode){
     return {street, city, zipcode}
 }
