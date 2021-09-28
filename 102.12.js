@@ -1,3 +1,5 @@
+/* Написать функцию, которая принимает много числовых параметров, и возращает сумму этих параметров*/
+
 function sum(...args){
     return args.reduce((sum, nextValue) => sum += nextValue);
 }
