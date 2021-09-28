@@ -11,6 +11,7 @@ function showPrimes(limit){
     }
 }
 
+//old version
 
 function isPrime(nubmer){
     let count = 0;
