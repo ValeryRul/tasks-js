@@ -1,7 +1,7 @@
 /* Написать функцию, которая принимает положительное числовое значение и выводит все простые числа от 2 и до этого числа включительно*/
 
 function showPrimes(limit){
-    if(typeof(limit) !== 'number' || limit === Infinity){
+    if(typeof(limit) !== 'number' || limit === Infinity || limit < 0){
         return console.log ('Please, input a number');
     }
     for(let i = 2; i <= limit; i++){
@@ -14,16 +14,12 @@ function showPrimes(limit){
 //old version
 
 function isPrime(nubmer){
-    let count = 0;
-    for(let i = 1; i <= nubmer; i++){
+    for(let i = 2; i < nubmer; i++){
         if(nubmer % i === 0){
-            count++;
-            if(count > 2){
-                return false;
-            }
+            return false;
         }
     }
-    return count < 3;
+    return true;
 }
 
-showPrimes(10);
+showPrimes(1);
