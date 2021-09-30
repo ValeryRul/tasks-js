@@ -24,6 +24,4 @@ function arrayFromRange1(min, max){
 }
 
 
-console.log(arrayFromRange(-5, -10));
-
-console.log(arrayFromRange1(-5, -10));
+console.log(arrayFromRange(-10,10));

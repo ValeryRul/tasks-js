@@ -10,13 +10,14 @@ function Address(street, city, zipcode){
 
 
 function areEqual(address, address1){
-    for(let entry of getArrayOfParameters(address1)){
-        if(!getArrayOfParameters(address).includes(entry)){
+    for(let entry of Object.keys(address1)){
+        if(!Object.keys(address).includes(entry)){
             return false;
         }
     }
-    for(let entry of getArrayOfValues(address)){
-        if(!getArrayOfValues(address1).includes(entry)){
+    
+    for(let entry of Object.values(address)){
+        if(!Object.values(address1).includes(entry)){
             return false;
         }
     }
@@ -33,30 +34,12 @@ function areSame(address, address1){
     return address === address1;
 }
 
-
-
-function getArrayOfParameters(obj){
-    let arrayOfParameters = [];
-    for(let key of Object.keys(obj)){
-        arrayOfParameters.push(key)
-    }
-    return arrayOfParameters;
-}
-
-
-function getArrayOfValues(obj){
-    let arrayOfValues = [];
-    for(let entry of Object.values(obj)){
-        arrayOfValues.push(entry);
-    }
-    return arrayOfValues;
-}
-
 let address = {
-    street: 'a',
+    street: 'c',
     city: 'b',
-    zipcode: 'c',
+    zipcode: 'a'
 };
+
 let address1 = new Address('a', 'b', 'c');
 
 
